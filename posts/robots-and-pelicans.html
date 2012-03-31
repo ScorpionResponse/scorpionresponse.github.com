@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>:w! Ramblings - general</title>
+    <title>:w! Robots and Pelicans</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
     <link href="http://scorpionresponse.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title=":w! Ramblings Atom Feed" />
@@ -38,61 +38,53 @@
             
             
             
-                <li class="active"><a href=".././category/general.html">general</a></li>
+                <li ><a href=".././category/general.html">general</a></li>
             
-                <li ><a href=".././category/coding.html">coding</a></li>
+                <li class="active"><a href=".././category/coding.html">coding</a></li>
             
             </ul>
         </nav>
     </header><!-- /#banner -->
             
-
-            
-
-        
-        
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href=".././posts/first-post.html">First Post!</a></h1> 
-                    <footer class="post-info">
+<section id="content" class="body">    
+    <article>
+        <header>
+            <h1 class="entry-title">
+                <a href="" rel="bookmark" title="Permalink to Robots and Pelicans">Robots and Pelicans</a>
+            </h1>
+        </header>
+        <div class="entry-content">
+            <footer class="post-info">
     <i>
         By Paul Moss, 
         
-        published on <time>2012-03-28</time> 
-        in <a href=".././category/general.html">general</a>.
+        published on <time>2012-03-29</time> 
+        in <a href=".././category/coding.html">coding</a>.
     </i>
-    
-</footer><!-- /.post-info --><p>Time has come for me to crawl out from the rock I'm under and join the
-early 2000's.  I generally try to keep a low profile on the internet, but
-lately I've started to feel as if I should participate a little more in
-my interests.</p>
-<p>This site will mostly be a dumping ground for the random thoughts I have and
-projects that I work on. So far I haven't found a great way to keep track of
-the things that I might want to refer to again.  Hopefully this will work and
-no one else will ever find it.</p>
-<p>The blog is powered by <a class="reference external" href="http://pelican.notmyidea.org/">Pelican</a>.  So far, I
-have found it fairly easy to get set up.  If I run into any snags, this'll be
-the place I document them.</p>
-<p>Here's to trying new things.</p>
+    <p>tags: <a href=".././tag/pelican.html">pelican</a></p>
+</footer><!-- /.post-info -->
+            <p>My first snag with <a class="reference external" href="http://pelican.notmyidea.org/">Pelican</a> overcome.  As any
+good site creator I wanted to make sure my favicon.ico and robots.txt files
+were in place.  Also I despise seeing the 404 errors pop up as I play around
+with my site. Pelican doesn't immediately make it obvious how to accomplish
+this task.</p>
+<p>With a little bit of Googling, I found <a class="reference external" href="https://github.com/ametaireau/pelican/commit/04da794b6bae6f151a946b6edfca7e8d01a6f9f3">this commit</a>.
+In my /content folder I created a new folder called 'extra' (though that could
+have been named anything I figured I would follow the example).  There are two
+files in it:</p>
+<pre class="literal-block">
+favicon.ico
+robots.txt
+</pre>
+<p>Then we simply add a line to the Pelican settings file:</p>
+<pre class="literal-block">
+FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'), ('extra/favicon.ico', 'favicon.ico'),)
+</pre>
+<p>Run a quick <tt class="docutils literal">make html</tt> and we're ready to roll.</p>
 
-                </article>
-                
-                    
-<p class="paginator">
-    
-    Page 1 / 1
-    
-</p>
-
-                
-            </aside><!-- /#featured -->
-            
-        
-        
-        
-
-    
-
+        </div><!-- /.entry-content -->
+    </article>
+</section>
 
     <footer id="contentinfo" class="body">
         &copy; 2012 Paul Moss. All Rights Reserved.
