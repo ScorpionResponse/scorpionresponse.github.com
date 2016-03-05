@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>:w! Ramblings</title><link href="http://scorpionresponse.com/" rel="alternate"></link><link href="http://scorpionresponse.com/feeds/all-en.atom.xml" rel="self"></link><id>http://scorpionresponse.com/</id><updated>2012-03-29T00:00:00-04:00</updated><entry><title>Robots and Pelicans</title><link href="http://scorpionresponse.com/posts/robots-and-pelicans.html" rel="alternate"></link><updated>2012-03-29T00:00:00-04:00</updated><author><name>Paul Moss</name></author><id>tag:scorpionresponse.com,2012-03-29:posts/robots-and-pelicans.html</id><summary type="html">&lt;p&gt;My first snag with &lt;a class="reference external" href="http://pelican.notmyidea.org/"&gt;Pelican&lt;/a&gt; overcome.  As any
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>:w! Ramblings</title><link>http://scorpionresponse.com/</link><description></description><atom:link href="http://scorpionresponse.com/feeds/paul-moss.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 29 Mar 2012 00:00:00 -0400</lastBuildDate><item><title>Robots and Pelicans</title><link>http://scorpionresponse.com/posts/robots-and-pelicans.html</link><description>&lt;p&gt;My first snag with &lt;a class="reference external" href="http://pelican.notmyidea.org/"&gt;Pelican&lt;/a&gt; overcome.  As any
 good site creator I wanted to make sure my favicon.ico and robots.txt files
 were in place.  Also I despise seeing the 404 errors pop up as I play around
 with my site. Pelican doesn't immediately make it obvious how to accomplish
@@ -17,7 +17,7 @@ robots.txt
 FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'), ('extra/favicon.ico', 'favicon.ico'),)
 &lt;/pre&gt;
 &lt;p&gt;Run a quick &lt;tt class="docutils literal"&gt;make html&lt;/tt&gt; and we're ready to roll.&lt;/p&gt;
-</summary><category term="pelican"></category></entry><entry><title>First Post!</title><link href="http://scorpionresponse.com/posts/first-post.html" rel="alternate"></link><updated>2012-03-28T00:00:00-04:00</updated><author><name>Paul Moss</name></author><id>tag:scorpionresponse.com,2012-03-28:posts/first-post.html</id><summary type="html">&lt;p&gt;Time has come for me to crawl out from the rock I'm under and join the
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Paul Moss</dc:creator><pubDate>Thu, 29 Mar 2012 00:00:00 -0400</pubDate><guid>tag:scorpionresponse.com,2012-03-29:posts/robots-and-pelicans.html</guid><category>pelican</category></item><item><title>First Post!</title><link>http://scorpionresponse.com/posts/first-post.html</link><description>&lt;p&gt;Time has come for me to crawl out from the rock I'm under and join the
 early 2000's.  I generally try to keep a low profile on the internet, but
 lately I've started to feel as if I should participate a little more in
 my interests.&lt;/p&gt;
@@ -29,4 +29,4 @@ no one else will ever find it.&lt;/p&gt;
 have found it fairly easy to get set up.  If I run into any snags, this'll be
 the place I document them.&lt;/p&gt;
 &lt;p&gt;Here's to trying new things.&lt;/p&gt;
-</summary></entry></feed>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Paul Moss</dc:creator><pubDate>Wed, 28 Mar 2012 00:00:00 -0400</pubDate><guid>tag:scorpionresponse.com,2012-03-28:posts/first-post.html</guid></item></channel></rss>
